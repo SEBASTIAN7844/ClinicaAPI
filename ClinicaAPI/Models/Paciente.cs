@@ -1,4 +1,6 @@
-﻿namespace ClinicaAPI.Models
+﻿using System;
+
+namespace ClinicaAPI.Models
 {
     public class Paciente
     {
@@ -6,5 +8,11 @@
         public string Nombre { get; set; } = string.Empty;
         public int Edad { get; set; }
         public string Diagnostico { get; set; } = string.Empty;
+
+        // Nuevos campos
+        public string Telefono { get; set; } = string.Empty;
+        public string Direccion { get; set; } = string.Empty;
+        public string CorreoElectronico { get; set; } = string.Empty;
+        public DateTime FechaRegistro { get; set; } = DateTime.Now;
     }
 }
